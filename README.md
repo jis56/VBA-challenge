@@ -1,20 +1,20 @@
-Sub stock()
+    Sub stock()
 
-Dim ws As Worksheet
-Dim ticker As String
-Dim vol As Double
-Dim openprice As Double
-Dim closeprice As Double
-Dim yearlychange As Double
-Dim percentchange As Double
-Dim lastrow As Long
-Dim summarytablerow As Integer
-Dim rowcount As Integer
-Dim greatestincrease As Double
-Dim greatestdecrease As Double
-Dim totalvolume As Double
+    Dim ws As Worksheet
+    Dim ticker As String
+    Dim vol As Double
+    Dim openprice As Double
+    Dim closeprice As Double
+    Dim yearlychange As Double
+    Dim percentchange As Double
+    Dim lastrow As Long
+    Dim summarytablerow As Integer
+    Dim rowcount As Integer
+    Dim greatestincrease As Double
+    Dim greatestdecrease As Double
+    Dim totalvolume As Double
 
-For Each ws In Worksheets
+    For Each ws In Worksheets
 
     ws.Cells(1, 9).Value = "Ticker"
     ws.Cells(1, 10).Value = "Yearly Change"
@@ -120,7 +120,7 @@ For Each ws In Worksheets
         ws.Cells(2, 16).Style = "Percent"
         ws.Cells(3, 16).Style = "Percent"
    
-Next ws
+    Next ws
    
-End Sub
+    End Sub
 
